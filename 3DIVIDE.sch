@@ -12,17 +12,17 @@ lab=#net2}
 N 300 -70 300 -40 {
 lab=Q}
 N -60 -70 170 -70 {
-lab=#net3}
+lab=Q}
 N -60 -70 -60 -40 {
-lab=#net3}
+lab=Q}
 N -70 -20 -60 -20 {
-lab=#net4}
+lab=QB}
 N -70 -70 -70 -20 {
-lab=#net4}
+lab=QB}
 N -70 -80 -70 -70 {
-lab=#net4}
+lab=QB}
 N -70 -80 180 -80 {
-lab=#net4}
+lab=QB}
 N 310 -80 310 -20 {
 lab=QB}
 N 300 -20 310 -20 {
@@ -36,15 +36,18 @@ lab=Q}
 N 310 -20 330 -20 {
 lab=QB}
 N 40 -40 70 -40 {
-lab=#net5}
+lab=#net3}
 N 40 -20 70 -20 {
-lab=#net6}
-N 120 30 250 30 {}
-N 170 -70 300 -70 {}
-N 180 -80 310 -80 {}
-C {/home/mstopyra/Documents/FINAL/DFF.sym} -10 -20 0 0 {name=x1}
-C {/home/mstopyra/Documents/FINAL/DFF.sym} 250 -20 0 0 {name=x2}
+lab=#net4}
+N 120 30 250 30 {
+lab=IN_RO}
+N 170 -70 300 -70 {
+lab=Q}
+N 180 -80 310 -80 {
+lab=QB}
+C {/home/mstopyra/Documents/DTILO/DFF.sym} -10 -20 0 0 {name=x1}
+C {/home/mstopyra/Documents/DTILO/DFF.sym} 250 -20 0 0 {name=x2}
 C {devices/opin.sym} 330 -40 0 0 {name=p1 lab=Q}
 C {devices/ipin.sym} -70 30 0 0 {name=p2 lab=IN_RO}
 C {devices/opin.sym} 330 -20 0 0 {name=p3 lab=QB}
-C {/home/mstopyra/Documents/FINAL/DFF.sym} 120 -20 0 0 {name=x3}
+C {/home/mstopyra/Documents/DTILO/DFF.sym} 120 -20 0 0 {name=x3}

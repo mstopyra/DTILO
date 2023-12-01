@@ -16,17 +16,17 @@ lab=Q}
 N -50 -50 -50 -20 {
 lab=Q}
 N -60 -0 -50 0 {
-lab=xxx}
+lab=QB}
 N -60 -50 -60 -0 {
-lab=xxx}
+lab=QB}
 N -60 -60 -60 -50 {
-lab=xxx}
+lab=QB}
 N -60 -60 190 -60 {
-lab=xxx}
+lab=QB}
 N 190 -60 190 -0 {
-lab=xxx}
+lab=QB}
 N 180 0 190 -0 {
-lab=xxx}
+lab=QB}
 N -60 50 -0 50 {
 lab=IN_RO}
 N 0 50 130 50 {
@@ -34,9 +34,9 @@ lab=IN_RO}
 N 180 -20 210 -20 {
 lab=Q}
 N 190 0 210 0 {
-lab=xxx}
-C {/home/mstopyra/Documents/FINAL/DFF.sym} 0 0 0 0 {name=x1}
-C {/home/mstopyra/Documents/FINAL/DFF.sym} 130 0 0 0 {name=x2}
+lab=QB}
+C {/home/mstopyra/Documents/DTILO/DFF.sym} 0 0 0 0 {name=x1}
+C {/home/mstopyra/Documents/DTILO/DFF.sym} 130 0 0 0 {name=x2}
 C {devices/opin.sym} 210 -20 0 0 {name=p1 lab=Q}
 C {devices/ipin.sym} -60 50 0 0 {name=p2 lab=IN_RO}
 C {devices/opin.sym} 210 0 0 0 {name=p3 lab=QB}
