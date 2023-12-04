@@ -24,7 +24,7 @@ lab=#net1}
 N 60 0 80 0 {
 lab=RO_out_d}
 N -290 -20 -260 -20 {
-lab=I_desired}
+lab=RO_out_d}
 N -290 20 -260 20 {
 lab=RO_out_d}
 N -810 -170 -790 -170 {
@@ -63,7 +63,6 @@ C {devices/lab_pin.sym} -220 130 2 0 {name=p7 lab=VCP_d}
 C {devices/lab_pin.sym} -790 -170 0 1 {name=p8 lab=I_desired}
 C {devices/lab_pin.sym} -790 -150 0 1 {name=p9 lab=I_complement}
 C {devices/lab_pin.sym} 60 0 0 1 {name=p10 lab=RO_out_d}
-C {devices/lab_pin.sym} -290 -20 0 0 {name=p11 lab=I_desired}
 C {devices/lab_pin.sym} -290 20 0 0 {name=p12 lab=RO_out_d}
 C {devices/lab_pin.sym} 30 -130 2 1 {name=p13 lab=I_desired}
 C {devices/lab_pin.sym} 30 -200 0 0 {name=p27 lab=VBN_d}
@@ -101,3 +100,4 @@ C {devices/opin.sym} 440 60 0 0 {name=p3 lab=f}
 C {/home/mstopyra/Documents/DTILO/BiasGen.sym} 70 -150 0 0 {name=x3}
 C {devices/lab_pin.sym} 30 -180 2 1 {name=p16 lab=VCN_d}
 C {devices/lab_pin.sym} 30 -160 2 1 {name=p17 lab=VCP_d}
+C {devices/lab_pin.sym} -290 -20 0 0 {name=p11 lab=Vinj}
