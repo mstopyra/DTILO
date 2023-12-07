@@ -45,9 +45,9 @@ N 170 -70 300 -70 {
 lab=Q}
 N 180 -80 310 -80 {
 lab=QB}
-C {/home/mstopyra/Documents/DTILO/DFF.sym} -10 -20 0 0 {name=x1}
-C {/home/mstopyra/Documents/DTILO/DFF.sym} 250 -20 0 0 {name=x2}
 C {devices/opin.sym} 330 -40 0 0 {name=p1 lab=Q}
 C {devices/ipin.sym} -70 30 0 0 {name=p2 lab=IN_RO}
 C {devices/opin.sym} 330 -20 0 0 {name=p3 lab=QB}
-C {/home/mstopyra/Documents/DTILO/DFF.sym} 120 -20 0 0 {name=x3}
+C {/home/mstopyra/Documents/DTILO/schemas/DFF.sym} -10 -20 0 0 {name=x1}
+C {/home/mstopyra/Documents/DTILO/schemas/DFF.sym} 120 -20 0 0 {name=x2}
+C {/home/mstopyra/Documents/DTILO/schemas/DFF.sym} 250 -20 0 0 {name=x3}

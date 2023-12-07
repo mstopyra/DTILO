@@ -258,7 +258,7 @@ lab=#net24}
 N 2230 -310 2230 -290 {
 lab=#net24}
 N 2110 -410 2110 -370 {
-lab=xxx}
+lab=I_OUT}
 N 2110 -290 2110 -260 {
 lab=#net24}
 N 1980 -290 1980 -260 {
@@ -358,7 +358,7 @@ lab=#net14}
 N 1430 -690 1430 -500 {
 lab=#net14}
 N 2110 -620 2110 -410 {
-lab=xxx}
+lab=I_OUT}
 N 1290 -760 1470 -760 {
 lab=VCN}
 N 1530 -660 1640 -660 {
@@ -384,7 +384,7 @@ lab=VBP}
 N -710 -910 -680 -910 {
 lab=VBP}
 N 2170 -660 2200 -660 {
-lab=xxx}
+lab=I_OUT}
 N -710 -730 -610 -730 {
 lab=GND}
 N 590 -530 890 -530 {
@@ -396,7 +396,7 @@ lab=#net14}
 N 1430 -500 1430 -480 {
 lab=#net14}
 N 2110 -660 2110 -620 {
-lab=xxx}
+lab=I_OUT}
 N 1700 -830 2040 -830 {
 lab=#net22}
 N 2040 -830 2040 -650 {
@@ -456,7 +456,7 @@ lab=#net14}
 N 530 -510 540 -510 {
 lab=I_DUMP}
 N 2110 -660 2170 -660 {
-lab=xxx}
+lab=I_OUT}
 C {devices/ipin.sym} -370 -460 3 0 {name=p1 lab=D3}
 C {devices/ipin.sym} -170 -460 3 0 {name=p2 lab=D2}
 C {devices/ipin.sym} 30 -460 3 0 {name=p3 lab=D1}
@@ -1268,8 +1268,8 @@ C {madvlsi/gnd.sym} 1320 -610 0 1 {name=l16 lab=GND}
 C {madvlsi/gnd.sym} 1500 -610 0 1 {name=l17 lab=GND}
 C {madvlsi/gnd.sym} 1670 -610 0 1 {name=l18 lab=GND}
 C {devices/lab_pin.sym} 1290 -930 0 0 {name=p33 sig_type=std_logic lab=VBP}
-C {/home/mstopyra/Documents/DTILO/inv.sym} -220 -490 0 0 {name=x1}
-C {/home/mstopyra/Documents/DTILO/inv.sym} -20 -490 0 0 {name=x2}
-C {/home/mstopyra/Documents/DTILO/inv.sym} 180 -490 0 0 {name=x3}
-C {/home/mstopyra/Documents/DTILO/inv.sym} 380 -490 0 0 {name=x4}
 C {devices/iopin.sym} 2200 -660 0 0 {name=p5 lab=I_OUT}
+C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} -220 -490 0 0 {name=x1}
+C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} -20 -490 0 0 {name=x2}
+C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} 180 -490 0 0 {name=x3}
+C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} 380 -490 0 0 {name=x4}

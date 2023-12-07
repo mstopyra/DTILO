@@ -349,6 +349,22 @@ N -420 -110 -420 110 {
 lab=VBP}
 N -500 -60 -500 30 {
 lab=VBP}
+N -500 30 -390 30 {
+lab=VBP}
+N -310 -10 -310 20 {
+lab=VBP}
+N -340 20 -310 20 {
+lab=VBP}
+N -340 20 -340 30 {
+lab=VBP}
+N -390 30 -340 30 {
+lab=VBP}
+N -340 -40 -250 -40 {
+lab=VDD}
+N -310 -10 -280 -10 {
+lab=VBP}
+N -290 -50 -290 -40 {
+lab=VDD}
 C {madvlsi/pmos3.sym} -390 150 1 0 {name=M14
 L=0.5
 W=12
@@ -711,7 +727,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/opin.sym} -420 110 2 0 {name=p2 lab=VBP}
+C {devices/opin.sym} 600 110 2 1 {name=p2 lab=VBP}
 C {devices/opin.sym} -420 300 2 0 {name=p6 lab=VCN}
 C {madvlsi/gnd.sym} 100 300 0 0 {name=l6 lab=GND}
 C {madvlsi/nmos3.sym} 60 -180 3 0 {name=M44
@@ -1079,7 +1095,6 @@ spiceprefix=X
 C {madvlsi/gnd.sym} 560 -180 0 1 {name=l10 lab=GND}
 C {devices/opin.sym} -420 -360 2 0 {name=p7 lab=VCP}
 C {devices/opin.sym} -420 -140 2 0 {name=p8 lab=VBN}
-C {devices/opin.sym} -500 30 1 0 {name=p4 lab=SINK}
 C {madvlsi/vdd.sym} -580 -60 0 1 {name=l3 lab=VDD}
 C {madvlsi/gnd.sym} -670 40 0 0 {name=l7 lab=GND}
 C {madvlsi/vdd.sym} -760 -60 0 1 {name=l15 lab=VDD}
@@ -1173,3 +1188,35 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/opin.sym} -250 20 1 0 {name=p1 lab=SINK}
+C {madvlsi/pmos3.sym} -340 -10 2 0 {name=M2
+L=0.5
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -250 -10 0 0 {name=M3
+L=0.5
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/vdd.sym} -290 -50 0 1 {name=l1 lab=VDD}
