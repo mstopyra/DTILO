@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -308,6 +308,15 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/ipin.sym} -250 -40 0 0 {name=p1 lab=D}
+C {devices/ipin.sym} -250 50 0 0 {name=p2 lab=DB
+}
+C {devices/ipin.sym} -250 180 0 0 {name=p3 lab=CLK
+}
+C {devices/opin.sym} 510 -40 0 0 {name=p4 lab=Q}
+C {devices/opin.sym} 510 50 0 0 {name=p5 lab=QB}
+C {madvlsi/vdd.sym} 110 -290 0 0 {name=l1 lab=VDD}
+C {devices/gnd.sym} 290 260 0 0 {name=l2 lab=GND}
 C {madvlsi/nmos3.sym} 420 110 0 1 {name=M14
 L=0.15
 W=1
@@ -323,12 +332,3 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} -250 -40 0 0 {name=p1 lab=D}
-C {devices/ipin.sym} -250 50 0 0 {name=p2 lab=DB
-}
-C {devices/ipin.sym} -250 180 0 0 {name=p3 lab=CLK
-}
-C {devices/opin.sym} 510 -40 0 0 {name=p4 lab=Q}
-C {devices/opin.sym} 510 50 0 0 {name=p5 lab=QB}
-C {madvlsi/vdd.sym} 110 -290 0 0 {name=l1 lab=VDD}
-C {devices/gnd.sym} 290 260 0 0 {name=l2 lab=GND}
