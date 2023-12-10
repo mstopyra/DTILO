@@ -25,7 +25,7 @@ lab=#net1}
 N -200 -360 -180 -360 {
 lab=RO_out_d}
 N -550 -380 -520 -380 {
-lab=I_desired}
+lab=VBP_d}
 N -550 -340 -520 -340 {
 lab=RO_out_d}
 N -1070 -530 -1050 -530 {
@@ -50,29 +50,30 @@ N 430 -530 440 -530 {
 lab=f/4}
 N 170 -570 180 -570 {
 lab=RO_out_d}
-N 180 -570 180 -300 {
-lab=RO_out_d}
 N 290 -420 300 -420 {
 lab=f/3}
 N -1050 -510 -1030 -510 {
 lab=#net3}
 N -1040 -530 -1000 -530 {
-lab=I_desired}
+lab=VBP_d}
 N -1020 -510 -1000 -510 {
 lab=I_complement}
-C {/home/mstopyra/Documents/DTILO/RING_OSC.sym} -150 -360 0 0 {name=x1}
-C {/home/mstopyra/Documents/DTILO/FCDA.sym} -440 -360 0 0 {name=x2}
+N 290 -510 300 -510 {
+lab=f/2b}
+N 430 -510 440 -510 {
+lab=f/4b}
+N 290 -400 300 -400 {
+lab=f/3b}
+N 180 -530 180 -420 {}
+N 180 -570 180 -530 {}
 C {/home/lxbtlr/DTILO/schemas/4BIT_DAC.sym} -1100 -500 0 0 {name=x4}
 C {devices/lab_pin.sym} -480 -450 0 0 {name=p4 lab=VBP_d}
 C {devices/lab_pin.sym} -440 -470 0 0 {name=p5 lab=VBN_d}
 C {devices/lab_pin.sym} -440 -250 2 0 {name=p6 lab=VCN_d}
 C {devices/lab_pin.sym} -480 -230 2 0 {name=p7 lab=VCP_d}
-C {devices/lab_pin.sym} -1000 -530 0 1 {name=p8 lab=I_desired}
 C {devices/lab_pin.sym} -1000 -510 0 1 {name=p9 lab=I_complement}
 C {devices/lab_pin.sym} -200 -360 0 1 {name=p10 lab=RO_out_d}
-C {devices/lab_pin.sym} -550 -380 0 0 {name=p11 lab=I_desired}
 C {devices/lab_pin.sym} -550 -340 0 0 {name=p12 lab=RO_out_d}
-C {devices/lab_pin.sym} -230 -490 2 1 {name=p13 lab=I_desired}
 C {devices/lab_pin.sym} -230 -560 0 0 {name=p27 lab=VBN_d}
 C {devices/lab_pin.sym} -230 -580 0 0 {name=p28 lab=VBP_d}
 C {madvlsi/vsource.sym} -1170 -250 0 0 {name=V2
@@ -97,15 +98,12 @@ C {devices/lab_pin.sym} -1300 -490 0 0 {name=p34 sig_type=std_logic lab=d2}
 C {devices/lab_pin.sym} -1280 -510 0 0 {name=p35 sig_type=std_logic lab=d1
 }
 C {devices/lab_pin.sym} -1260 -530 0 0 {name=p36 sig_type=std_logic lab=d0}
-C {/home/mstopyra/Documents/DTILO/3DIVIDE.sym} 230 -350 0 0 {name=x9}
 C {/home/lxbtlr/DTILO/schemas/2DIVIDE.sym} 330 -520 0 0 {name=x10}
 C {/home/lxbtlr/DTILO/schemas/2DIVIDE.sym} 470 -520 0 0 {name=x11}
 C {devices/opin.sym} 300 -580 0 0 {name=p1 lab=f/2}
 C {devices/opin.sym} 440 -530 0 0 {name=p2 lab=f/4}
 C {devices/lab_pin.sym} 170 -570 2 1 {name=p14 lab=RO_out_d}
 C {devices/opin.sym} 300 -420 0 0 {name=p15 lab=f/3}
-C {devices/opin.sym} 180 -300 0 0 {name=p3 lab=f}
-C {/home/mstopyra/Documents/DTILO/BiasGen.sym} -190 -510 0 0 {name=x3}
 C {devices/lab_pin.sym} -230 -540 2 1 {name=p16 lab=VCN_d}
 C {devices/lab_pin.sym} -230 -520 2 1 {name=p17 lab=VCP_d}
 C {madvlsi/tt_models.sym} 290 -960 0 0 {
@@ -163,5 +161,14 @@ C {devices/code.sym} 440 -940 0 0 {name=SPICE only_toplevel=false value=".param 
     quit
 .endc"
 }
-C {madvlsi/ammeter1.sym} -1050 -530 3 0 {name=V_i_out}
-C {madvlsi/ammeter1.sym} -1030 -510 3 0 {name=V_i_dump}
+C {madvlsi/ammeter1.sym} -1040 -530 1 1 {name=V_i_out}
+C {madvlsi/ammeter1.sym} -1020 -510 1 1 {name=V_i_dump}
+C {/home/lxbtlr/DTILO/schemas/RING_OSC.sym} -150 -360 0 0 {name=x1}
+C {/home/lxbtlr/DTILO/schemas/FCDA.sym} -440 -360 0 0 {name=x2}
+C {/home/lxbtlr/DTILO/schemas/BiasGen.sym} -190 -510 0 0 {name=x3}
+C {devices/lab_pin.sym} -1000 -530 2 0 {name=p8 lab=VBP_d}
+C {devices/lab_pin.sym} -550 -380 0 0 {name=p11 lab=VBP_d}
+C {/home/lxbtlr/DTILO/schemas/3DIVIDE.sym} 230 -350 0 0 {name=x5}
+C {devices/opin.sym} 300 -400 0 0 {name=p13 lab=f/3b}
+C {devices/opin.sym} 440 -510 0 0 {name=p18 lab=f/4b}
+C {devices/opin.sym} 300 -510 0 0 {name=p19 lab=f/2b}

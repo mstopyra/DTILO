@@ -1,139 +1,171 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
 V {}
 S {}
 E {}
-P 4 5 -1510 -590 -1510 -180 -870 -180 -870 -590 -1510 -590 {}
-P 4 5 -2150 -620 -2150 -130 -1580 -130 -1580 -620 -2150 -620 {}
-P 4 5 -760 -590 -760 -160 -190 -160 -190 -590 -760 -590 {}
-T {Desired Tuned ILO} -1510 -610 0 0 0.4 0.4 {}
-T {Digital Input} -2140 -650 0 0 0.4 0.4 {}
-N -1310 -420 -1310 -390 {
+P 4 5 -1440 -460 -1440 -50 -800 -50 -800 -460 -1440 -460 {}
+P 4 5 -2080 -490 -2080 0 -1510 0 -1510 -490 -2080 -490 {}
+P 4 5 -720 -460 -720 -50 -80 -50 -80 -460 -720 -460 {}
+T {Desired Tuned ILO} -1440 -480 0 0 0.4 0.4 {}
+T {Digital Input} -2070 -520 0 0 0.4 0.4 {}
+N -1240 -290 -1240 -260 {
 lab=VBP_d}
-N -1270 -440 -1270 -380 {
+N -1200 -310 -1200 -250 {
 lab=VBN_d}
-N -1270 -290 -1270 -220 {
+N -1200 -160 -1200 -90 {
 lab=VCN_d}
-N -1310 -270 -1310 -200 {
+N -1240 -140 -1240 -70 {
 lab=VCP_d}
-N -1200 -330 -1130 -330 {
+N -1130 -200 -1060 -200 {
 lab=V_out}
-N -1380 -350 -1350 -350 {
+N -960 -200 -940 -200 {
+lab=RO_out_d}
+N -1310 -220 -1280 -220 {
 lab=Vinj}
-N -1380 -310 -1350 -310 {
+N -1310 -180 -1280 -180 {
 lab=RO_out_d}
-N -1850 -510 -1830 -510 {
+N -1830 -370 -1810 -370 {
 lab=#net1}
-N -1850 -490 -1830 -490 {
+N -1830 -350 -1810 -350 {
 lab=#net2}
-N -2050 -450 -2030 -450 {
+N -2030 -310 -2010 -310 {
 lab=d3}
-N -2080 -470 -2030 -470 {
+N -2060 -330 -2010 -330 {
 lab=d2}
-N -2060 -490 -2030 -490 {
+N -2040 -350 -2010 -350 {
 lab=d1}
-N -2040 -510 -2030 -510 {
+N -2020 -370 -2010 -370 {
 lab=d0}
-N -540 -500 -510 -500 {
+N -470 -370 -440 -370 {
 lab=f/2}
-N -530 -530 -530 -500 {
+N -460 -400 -460 -370 {
 lab=f/2}
-N -530 -550 -530 -530 {
+N -460 -420 -460 -400 {
 lab=f/2}
-N -400 -500 -390 -500 {
+N -330 -370 -320 -370 {
 lab=f/4}
-N -660 -540 -650 -540 {
+N -590 -410 -580 -410 {
 lab=RO_out_d}
-N -540 -390 -530 -390 {
+N -470 -260 -460 -260 {
 lab=f/3}
-N -1830 -490 -1810 -490 {
+N -1810 -350 -1790 -350 {
 lab=#net2}
-N -1820 -510 -1780 -510 {
+N -1800 -370 -1760 -370 {
 lab=VBP_d}
-N -1800 -490 -1780 -490 {
+N -1780 -350 -1760 -350 {
 lab=I_complement}
-N -650 -540 -650 -500 {
+N -470 -350 -460 -350 {
+lab=f/2b}
+N -330 -350 -320 -350 {
+lab=f/4b}
+N -470 -240 -460 -240 {
+lab=f/3b}
+N -580 -370 -580 -260 {
 lab=RO_out_d}
-N -650 -500 -650 -390 {
+N -580 -410 -580 -370 {
 lab=RO_out_d}
-N -1050 -570 -1050 -560 {
+N -1760 -440 -1760 -430 {
 lab=GND}
-N -1050 -570 -990 -570 {
+N -1760 -440 -1700 -440 {
 lab=GND}
-N -990 -570 -990 -560 {
+N -1700 -440 -1700 -430 {
 lab=GND}
-C {devices/lab_pin.sym} -1310 -420 0 0 {name=p4 lab=VBP_d}
-C {devices/lab_pin.sym} -1270 -440 0 0 {name=p5 lab=VBN_d}
-C {devices/lab_pin.sym} -1270 -220 2 0 {name=p6 lab=VCN_d}
-C {devices/lab_pin.sym} -1310 -200 2 0 {name=p7 lab=VCP_d}
-C {devices/lab_pin.sym} -1780 -490 0 1 {name=p9 lab=I_complement}
-C {devices/lab_pin.sym} -1030 -330 0 1 {name=p10 lab=RO_out_d}
-C {devices/lab_pin.sym} -1380 -350 0 0 {name=p11 lab=Vinj}
-C {devices/lab_pin.sym} -1380 -310 0 0 {name=p12 lab=RO_out_d}
-C {devices/lab_pin.sym} -1050 -480 0 0 {name=p27 lab=VBN_d}
-C {devices/lab_pin.sym} -1050 -500 0 0 {name=p28 lab=VBP_d}
-C {madvlsi/vsource.sym} -2000 -220 0 0 {name=V2
-value=1}
-C {madvlsi/vsource.sym} -2060 -220 0 0 {name=V4
-value=1}
-C {madvlsi/vsource.sym} -1940 -220 0 0 {name=V5
-value=1}
-C {madvlsi/vsource.sym} -1880 -220 0 0 {name=V6
-value=1}
-C {devices/lab_pin.sym} -1880 -250 0 0 {name=p29 sig_type=std_logic lab=d3}
-C {devices/lab_pin.sym} -1940 -250 0 0 {name=p30 sig_type=std_logic lab=d2}
-C {devices/lab_pin.sym} -2000 -250 0 0 {name=p31 sig_type=std_logic lab=d1
-}
-C {devices/lab_pin.sym} -2060 -250 0 0 {name=p32 sig_type=std_logic lab=d0}
-C {devices/gnd.sym} -1880 -190 0 0 {name=l1 lab=GND}
-C {devices/gnd.sym} -1940 -190 0 0 {name=l2 lab=GND}
-C {devices/gnd.sym} -2000 -190 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} -2060 -190 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} -2050 -450 0 0 {name=p33 sig_type=std_logic lab=d3}
-C {devices/lab_pin.sym} -2080 -470 0 0 {name=p34 sig_type=std_logic lab=d2}
-C {devices/lab_pin.sym} -2060 -490 0 0 {name=p35 sig_type=std_logic lab=d1
-}
-C {devices/lab_pin.sym} -2040 -510 0 0 {name=p36 sig_type=std_logic lab=d0}
-C {devices/opin.sym} -530 -550 0 0 {name=p1 lab=f/2}
-C {devices/opin.sym} -390 -500 0 0 {name=p2 lab=f/4}
-C {devices/lab_pin.sym} -660 -540 2 1 {name=p14 lab=RO_out_d}
-C {devices/opin.sym} -530 -390 0 0 {name=p15 lab=f/3}
-C {devices/lab_pin.sym} -1050 -460 2 1 {name=p16 lab=VCN_d}
-C {devices/lab_pin.sym} -1050 -440 2 1 {name=p17 lab=VCP_d}
-C {madvlsi/ammeter1.sym} -1820 -510 1 1 {name=V_i_out}
-C {madvlsi/ammeter1.sym} -1800 -490 1 1 {name=V_i_dump}
+N -1760 -370 -1710 -370 {
+lab=VBP_d}
 C {madvlsi/tt_models.sym} -1670 -790 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code.sym} -1500 -790 0 0 {name=SPICE only_toplevel=false value=".param V4=1.8 V2=1.8 V5=0 V6=0
-.dc Vinj 0 1.8 .01
-.save i(V_i_out) v(Vinj) v(RO_out_d) v(V_out) v(f/2) v(f/4) v(f/3) v(f)
+C {devices/code.sym} -1500 -790 0 0 {name=SPICE only_toplevel=false value="
+.param V1=1.8 V2=1.8 V3=0 V4=0
 
+.tran 0.01n 100n
+.save i(V_i_out) v(Vinj) v(RO_out_d) v(V_out) v(f/2) v(f/4) v(f/3) 
+
+.control
+    .param V1=1.8 V2=1.8 V3=0 V4=0
+    V_out 0 pulse(0 1.8 .1ns .1ns .1ns 1ns 2.2ns)
+    let runs = 9
+    let run = 1
+    while run <= runs
+
+        alter Vinj DC=0.2*run
+        run
+        plot v(Vinj) v(V_out) v(f/2)
+        write output_V\{$&run\}.txt i(V_i_out) v(Vinj) v(RO_out_d) v(V_out) v(f/2) v(f/4) v(f/3)
+        reset
+        let run = run + 1
+    end
+    *quit
+.endc
 
 .end
-"}
-C {/home/mstopyra/Documents/DTILO/schemas/4BIT_DAC.sym} -1880 -480 0 0 {name=x4}
-C {/home/mstopyra/Documents/DTILO/schemas/FCDA.sym} -1270 -330 0 0 {name=x2}
-C {/home/mstopyra/Documents/DTILO/schemas/BiasGen.sym} -1010 -430 0 0 {name=x3}
-C {/home/mstopyra/Documents/DTILO/schemas/RING_OSC.sym} -980 -330 0 0 {name=x1}
-C {/home/mstopyra/Documents/DTILO/schemas/2DIVIDE.sym} -500 -490 0 0 {name=x5}
-C {/home/mstopyra/Documents/DTILO/schemas/2DIVIDE.sym} -360 -490 0 0 {name=x6}
-C {/home/mstopyra/Documents/DTILO/schemas/3DIVIDE.sym} -600 -320 0 0 {name=x7}
-C {madvlsi/vsource.sym} -1250 -530 0 0 {name=Vinj
+"
+*.dc Vinj 0 1.8 .01
+*.save i(V_i_out) v(Vinj) v(RO_out_d) v(V_out) v(f/2) v(f/4) v(f/3) v(f)
+*.end
+}
+C {/home/lxbtlr/DTILO/schemas/4BIT_DAC.sym} -1860 -340 0 0 {name=x8}
+C {devices/lab_pin.sym} -1240 -290 0 0 {name=p21 lab=VBP_d}
+C {devices/lab_pin.sym} -1200 -310 0 0 {name=p22 lab=VBN_d}
+C {devices/lab_pin.sym} -1200 -90 2 0 {name=p23 lab=VCN_d}
+C {devices/lab_pin.sym} -1240 -70 2 0 {name=p24 lab=VCP_d}
+C {devices/lab_pin.sym} -1760 -350 0 1 {name=p25 lab=I_complement}
+C {devices/lab_pin.sym} -940 -200 0 1 {name=p26 lab=RO_out_d}
+C {devices/lab_pin.sym} -1310 -180 0 0 {name=p37 lab=RO_out_d}
+C {devices/lab_pin.sym} -990 -400 0 0 {name=p38 lab=VBN_d}
+C {devices/lab_pin.sym} -990 -420 0 0 {name=p39 lab=VBP_d}
+C {devices/lab_pin.sym} -2030 -310 0 0 {name=p44 sig_type=std_logic lab=d3}
+C {devices/lab_pin.sym} -2060 -330 0 0 {name=p45 sig_type=std_logic lab=d2}
+C {devices/lab_pin.sym} -2040 -350 0 0 {name=p46 sig_type=std_logic lab=d1
+}
+C {devices/lab_pin.sym} -2020 -370 0 0 {name=p47 sig_type=std_logic lab=d0}
+C {/home/lxbtlr/DTILO/schemas/2DIVIDE.sym} -430 -360 0 0 {name=x10}
+C {/home/lxbtlr/DTILO/schemas/2DIVIDE.sym} -290 -360 0 0 {name=x11}
+C {devices/opin.sym} -460 -420 0 0 {name=p48 lab=f/2}
+C {devices/opin.sym} -320 -370 0 0 {name=p49 lab=f/4}
+C {devices/lab_pin.sym} -590 -410 2 1 {name=p50 lab=RO_out_d}
+C {devices/opin.sym} -460 -260 0 0 {name=p51 lab=f/3}
+C {devices/lab_pin.sym} -990 -380 2 1 {name=p52 lab=VCN_d}
+C {devices/lab_pin.sym} -990 -360 2 1 {name=p53 lab=VCP_d}
+C {madvlsi/ammeter1.sym} -1800 -370 1 1 {name=V_i_out}
+C {madvlsi/ammeter1.sym} -1780 -350 1 1 {name=V_i_dump}
+C {/home/lxbtlr/DTILO/schemas/RING_OSC.sym} -910 -200 0 0 {name=x9}
+C {/home/lxbtlr/DTILO/schemas/FCDA.sym} -1200 -200 0 0 {name=x12}
+C {/home/lxbtlr/DTILO/schemas/BiasGen.sym} -950 -350 0 0 {name=x13}
+C {devices/lab_pin.sym} -1710 -370 2 0 {name=p54 lab=VBP_d}
+C {/home/lxbtlr/DTILO/schemas/3DIVIDE.sym} -530 -190 0 0 {name=x14}
+C {devices/opin.sym} -460 -240 0 0 {name=p56 lab=f/3b}
+C {devices/opin.sym} -320 -350 0 0 {name=p57 lab=f/4b}
+C {devices/opin.sym} -460 -350 0 0 {name=p58 lab=f/2b}
+C {devices/lab_pin.sym} -1310 -220 0 0 {name=p59 lab=Vinj}
+C {madvlsi/vsource.sym} -1350 -380 0 0 {name=Vinj
 value=1}
-C {devices/gnd.sym} -1250 -500 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} -1250 -560 0 0 {name=p18 lab=Vinj}
-C {devices/lab_pin.sym} -1160 -330 1 0 {name=p20 lab=V_out}
-C {madvlsi/capacitor.sym} -1050 -530 0 0 {name=C1
+C {devices/gnd.sym} -1350 -350 0 0 {name=l11 lab=GND}
+C {devices/lab_pin.sym} -1350 -410 0 0 {name=p60 lab=Vinj}
+C {madvlsi/capacitor.sym} -1760 -400 0 0 {name=C2
 value=1p
 m=1}
-C {devices/gnd.sym} -990 -560 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} -1780 -510 0 1 {name=p3 lab=VBP_d}
-C {devices/opin.sym} -400 -480 0 0 {name=p8 lab=f/4_B}
-C {devices/opin.sym} -540 -370 0 0 {name=p13 lab=f/3_B}
-C {devices/opin.sym} -540 -480 0 0 {name=p19 lab=f/2_B}
+C {devices/gnd.sym} -1700 -430 0 0 {name=l12 lab=GND}
+C {madvlsi/vsource.sym} -1880 -110 0 0 {name=V2
+value=1}
+C {madvlsi/vsource.sym} -1940 -110 0 0 {name=V1
+value=1}
+C {madvlsi/vsource.sym} -1820 -110 0 0 {name=V3
+value=1}
+C {madvlsi/vsource.sym} -1760 -110 0 0 {name=V4
+value=1}
+C {devices/lab_pin.sym} -1760 -140 0 0 {name=p40 sig_type=std_logic lab=d3}
+C {devices/lab_pin.sym} -1820 -140 0 0 {name=p41 sig_type=std_logic lab=d2}
+C {devices/lab_pin.sym} -1880 -140 0 0 {name=p42 sig_type=std_logic lab=d1
+}
+C {devices/lab_pin.sym} -1940 -140 0 0 {name=p43 sig_type=std_logic lab=d0}
+C {devices/gnd.sym} -1760 -80 0 0 {name=l7 lab=GND}
+C {devices/gnd.sym} -1820 -80 0 0 {name=l8 lab=GND}
+C {devices/gnd.sym} -1880 -80 0 0 {name=l9 lab=GND}
+C {devices/gnd.sym} -1940 -80 0 0 {name=l10 lab=GND}
+C {devices/lab_pin.sym} -1100 -200 1 0 {name=p1 lab=V_out}

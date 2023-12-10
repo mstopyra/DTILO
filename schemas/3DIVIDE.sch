@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -48,6 +48,6 @@ lab=QB}
 C {devices/opin.sym} 330 -40 0 0 {name=p1 lab=Q}
 C {devices/ipin.sym} -70 30 0 0 {name=p2 lab=IN_RO}
 C {devices/opin.sym} 330 -20 0 0 {name=p3 lab=QB}
-C {/home/mstopyra/Documents/DTILO/schemas/DFF.sym} -10 -20 0 0 {name=x1}
-C {/home/mstopyra/Documents/DTILO/schemas/DFF.sym} 120 -20 0 0 {name=x2}
-C {/home/mstopyra/Documents/DTILO/schemas/DFF.sym} 250 -20 0 0 {name=x3}
+C {/home/lxbtlr/DTILO/schemas/DFF.sym} -10 -20 0 0 {name=x1}
+C {/home/lxbtlr/DTILO/schemas/DFF.sym} 120 -20 0 0 {name=x2}
+C {/home/lxbtlr/DTILO/schemas/DFF.sym} 250 -20 0 0 {name=x3}

@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.3 file_version=1.2
 }
 G {}
 K {}
@@ -1123,10 +1123,6 @@ C {madvlsi/gnd.sym} 1500 -610 0 1 {name=l17 lab=GND}
 C {madvlsi/gnd.sym} 1670 -610 0 1 {name=l18 lab=GND}
 C {devices/lab_pin.sym} 1290 -930 0 0 {name=p33 sig_type=std_logic lab=VBP}
 C {devices/iopin.sym} 2230 -560 2 1 {name=p5 lab=I_OUT}
-C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} -220 -490 0 0 {name=x1}
-C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} -20 -490 0 0 {name=x2}
-C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} 180 -490 0 0 {name=x3}
-C {/home/mstopyra/Documents/DTILO/schemas/inv.sym} 380 -490 0 0 {name=x4}
 C {madvlsi/vdd.sym} -430 -750 0 0 {name=l3 lab=VDD}
 C {madvlsi/pmos3.sym} -310 -940 0 0 {name=M1
 L=4
@@ -1300,3 +1296,7 @@ C {madvlsi/gnd.sym} 2260 -630 0 1 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 2290 -740 0 1 {name=p9 sig_type=std_logic lab=VBN}
 C {madvlsi/vdd.sym} 2030 -1040 0 0 {name=l6 lab=VDD}
 C {madvlsi/vdd.sym} 2140 -1040 0 0 {name=l7 lab=VDD}
+C {/home/lxbtlr/DTILO/schemas/inv.sym} 380 -490 0 0 {name=x1}
+C {/home/lxbtlr/DTILO/schemas/inv.sym} 180 -490 0 0 {name=x2}
+C {/home/lxbtlr/DTILO/schemas/inv.sym} -20 -490 0 0 {name=x3}
+C {/home/lxbtlr/DTILO/schemas/inv.sym} -220 -490 0 0 {name=x4}
