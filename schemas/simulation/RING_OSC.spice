@@ -1,0 +1,38 @@
+** sch_path: /home/lxbtlr/DTILO/schemas/RING_OSC.sch
+**.subckt RING_OSC Out In q1 q2 q3 q4
+*.opin Out
+*.ipin In
+*.opin q1
+*.opin q2
+*.opin q3
+*.opin q4
+x1 q1 In inv
+x2 q2 q1 inv
+x3 q3 q2 inv
+x4 q4 q3 inv
+x5 Out q4 inv
+**** begin user architecture code
+
+.param W=1 L=.15
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/lxbtlr/DTILO/schemas/inv.sym # of pins=2
+** sym_path: /home/lxbtlr/DTILO/schemas/inv.sym
+** sch_path: /home/lxbtlr/DTILO/schemas/inv.sch
+.subckt inv Q A
+*.ipin A
+*.opin Q
+XM1 Q A GND GND sky130_fd_pr__nfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Q A VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=2 m=2
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end
