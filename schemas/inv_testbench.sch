@@ -49,7 +49,7 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 150 100 0 0 {name=s1 only_toplevel=false value=".param W=10 L=.65 i_s=.10n
+C {devices/code_shown.sym} 150 100 0 0 {name=s1 only_toplevel=false value=".param W=1 L=.15 i_s=.10n
 .tran 1n 2n
 .control
 run
