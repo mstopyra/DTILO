@@ -52,18 +52,15 @@ C {devices/lab_pin.sym} -390 -180 0 0 {name=p42 sig_type=std_logic lab=d1
 }
 C {devices/lab_pin.sym} -450 -180 0 0 {name=p43 sig_type=std_logic lab=d0}
 C {devices/code.sym} 240 -380 0 0 {name=Sim only_toplevel=false value="
-.param state=0
-.param d0=1.8*state 
-.param d1=1.8*state
-.param d2=1.8*state
-.param d3=1.8*state
+
 .tran .01n 30n
 
 .control
+foreach .temp 0 25 80
   run
   .save all
   plot i(v_i_out)  i(v_preamp)
-
+end
 .endc
 "}
 C {madvlsi/tt_models.sym} 270 -610 0 0 {
@@ -76,10 +73,6 @@ C {madvlsi/gnd.sym} -590 -120 0 0 {name=l2 lab=GND}
 C {madvlsi/vdd.sym} -590 -180 0 0 {name=l3 lab=VDD}
 C {madvlsi/vsource.sym} -590 -150 0 0 {name=Vdd
 value=1.8}
-C {devices/code_shown.sym} 260 -230 0 0 {name=s2 only_toplevel=false value=".param invW=12 invL=.5 
-.param W=32 L=4
-.param M_amp=2
-"}
 C {devices/lab_pin.sym} -340 -390 2 0 {name=p1 sig_type=std_logic lab=dump}
 C {devices/lab_pin.sym} 190 -120 2 0 {name=p2 sig_type=std_logic lab=out}
 C {madvlsi/gnd.sym} -450 -120 0 0 {name=l1 lab=GND}
@@ -93,3 +86,9 @@ C {/home/lxbtlr/DTILO/schemas/INPUT_AMP.sym} -200 -410 0 0 {name=x1}
 C {devices/lab_pin.sym} 190 -410 2 0 {name=p3 sig_type=std_logic lab=out}
 C {madvlsi/ammeter1.sym} -250 -410 3 1 {name=V_preamp}
 C {/home/lxbtlr/DTILO/schemas/INPUT_AMP.sym} -70 -410 0 0 {name=x2}
+C {devices/code_shown.sym} 260 -200 0 0 {name=s1 only_toplevel=false value=".param invW=1 invL=.15 
+.param d0=1.8 d1=1.8 d2=1.8 d3=1.8
+*.param n_invW=1 n_invL=.15
+.param W=32 L=4
+.param M_amp=2
+"}

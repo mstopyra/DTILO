@@ -22,8 +22,8 @@ lab=Q}
 N 0 50 0 120 {
 lab=GND}
 C {madvlsi/nmos3.sym} 30 20 1 0 {name=M1
-L=\{invL\}
-W=\{invW\}
+L=\{L\}
+W=\{W\}
 body=GND
 nf=1
 mult=1
@@ -37,8 +37,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 30 -100 3 0 {name=M2
-L=\{invL\}
-W=\{invW\}
+L=\{L\}
+W=\{W\}
 body=VDD
 nf=1
 mult=1

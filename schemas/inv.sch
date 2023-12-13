@@ -153,5 +153,5 @@ spiceprefix=X
 }
 C {madvlsi/vdd.sym} 150 -220 0 0 {name=l1 lab=VDD}
 C {madvlsi/capacitor.sym} 90 50 0 0 {name=C1
-value=1a
+value=.1f
 m=1}
