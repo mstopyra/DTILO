@@ -26,7 +26,7 @@ lab=d0}
 N -880 -140 -870 -140 {
 lab=f/4}
 N -1000 -400 -990 -400 {
-lab=amp_i_out}
+lab=RO_out}
 N -880 -250 -870 -250 {
 lab=f/3}
 N -1770 -350 -1750 -350 {
@@ -40,21 +40,21 @@ lab=f/4b}
 N -880 -230 -870 -230 {
 lab=f/3b}
 N -990 -360 -990 -250 {
-lab=amp_i_out}
+lab=RO_out}
 N -990 -400 -990 -360 {
-lab=amp_i_out}
+lab=RO_out}
 N -1860 -90 -1830 -90 {
 lab=#net2}
 N -1360 -270 -1340 -270 {
-lab=#net3}
+lab=RO_out}
 N -1360 -270 -1360 -210 {
-lab=#net3}
+lab=RO_out}
 N -1360 -210 -1230 -210 {
-lab=#net3}
+lab=RO_out}
 N -1230 -270 -1230 -210 {
-lab=#net3}
+lab=RO_out}
 N -1240 -270 -1230 -270 {
-lab=#net3}
+lab=RO_out}
 N -880 -360 -870 -360 {
 lab=f/2}
 N -870 -360 -850 -360 {
@@ -71,14 +71,6 @@ N -1280 -350 -1280 -310 {
 lab=q3}
 N -1260 -330 -1260 -310 {
 lab=q4}
-N -1720 -90 -1680 -90 {
-lab=comp_v}
-N -1680 -120 -1680 -90 {
-lab=comp_v}
-N -1730 -140 -1680 -140 {
-lab=amp_i_out}
-N -1730 -180 -1730 -140 {
-lab=amp_i_out}
 C {madvlsi/tt_models.sym} -700 -460 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -142,7 +134,7 @@ C {devices/opin.sym} -1300 -370 0 0 {name=p4 sig_type=std_logic lab=q2}
 C {devices/opin.sym} -1280 -350 0 0 {name=p5 sig_type=std_logic lab=q3}
 C {devices/opin.sym} -1260 -330 0 0 {name=p6 sig_type=std_logic lab=q4}
 C {/home/lxbtlr/DTILO/schemas/RING_OSC.sym} -1300 -270 0 0 {name=x5}
-C {devices/lab_pin.sym} -1730 -180 1 0 {name=p8 lab=amp_i_out}
+C {devices/lab_pin.sym} -1720 -90 2 0 {name=p8 lab=amp_i_out}
 C {madvlsi/ammeter1.sym} -1730 -90 3 1 {name=V_i_amp}
 C {devices/lab_pin.sym} -990 -140 2 1 {name=p10 lab=f/2}
 C {devices/code_shown.sym} -670 -80 0 0 {name=s2 only_toplevel=false value=".param invW=12 invL=.5 
@@ -154,10 +146,9 @@ value=1.8}
 C {madvlsi/gnd.sym} -2020 -170 0 0 {name=l5 lab=GND}
 C {madvlsi/vdd.sym} -2020 -230 0 0 {name=l6 lab=VDD}
 C {devices/lab_pin.sym} -1400 -290 1 0 {name=p12 lab=amp_i_out}
-C {devices/lab_pin.sym} -1000 -400 0 0 {name=p7 lab=amp_i_out}
+C {devices/lab_pin.sym} -1000 -400 0 0 {name=p7 lab=RO_out}
 C {madvlsi/vsource.sym} -1820 -210 0 0 {name=V5
 value=1}
 C {madvlsi/gnd.sym} -1820 -180 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} -1820 -240 0 1 {name=p13 lab=comp_v}
-C {/home/lxbtlr/DTILO/schemas/PMOS_gain_mirror.sym} -1640 -80 3 0 {name=x3}
-C {devices/lab_pin.sym} -1680 -90 0 1 {name=p9 lab=comp_v}
+C {devices/lab_pin.sym} -1820 -240 2 0 {name=p13 lab=amp_i_out}
+C {devices/lab_pin.sym} -1230 -240 2 0 {name=p9 lab=RO_out}
