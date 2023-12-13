@@ -37,8 +37,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 30 -100 3 0 {name=M2
-L=\{L\}
-W=\{W\}
+L=\{invL\}
+W=\{invW\}
 body=VDD
 nf=1
 mult=1

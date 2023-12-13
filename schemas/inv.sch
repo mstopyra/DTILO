@@ -58,8 +58,8 @@ lab=#net1}
 N 90 80 90 100 {
 lab=GND}
 C {madvlsi/nmos3.sym} 0 0 1 0 {name=M1
-L=\{L\}
-W=\{W\}*6
+L=\{invL\}
+W=\{invW\}*6
 body=GND
 nf=1
 mult=1
@@ -73,8 +73,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 0 -120 3 0 {name=M2
-L=\{L\}
-W=\{W\}*20
+L=\{invL\}
+W=\{invW\}*6
 body=VDD
 nf=1
 mult=1
@@ -92,8 +92,8 @@ C {devices/opin.sym} 380 -60 0 0 {name=p2 lab=Q}
 C {madvlsi/gnd.sym} -30 100 0 0 {name=l2 lab=GND}
 C {devices/ipin.sym} -30 -140 0 0 {name=p3 lab=VP}
 C {madvlsi/nmos3.sym} 180 0 1 0 {name=M3
-L=\{L\}
-W=\{W\}*40
+L=\{invL\}
+W=\{invW\}*6
 body=GND
 nf=1
 mult=1
@@ -107,8 +107,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 180 -120 3 0 {name=M4
-L=\{L\}
-W=\{W\}*10
+L=\{invL\}
+W=\{invW\}*6
 body=VDD
 nf=1
 mult=1
@@ -122,8 +122,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 280 0 1 0 {name=M5
-L=\{L\}
-W=\{W\}*6.5
+L=\{invL\}
+W=\{invW\}*6
 body=GND
 nf=1
 mult=1
@@ -137,8 +137,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 280 -120 3 0 {name=M6
-L=\{L\}
-W=\{W\}*30
+L=\{invL\}
+W=\{invW\}*6
 body=VDD
 nf=1
 mult=1
