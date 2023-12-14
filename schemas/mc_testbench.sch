@@ -133,14 +133,14 @@ C {devices/code.sym} 20 -880 0 0 {name=MC_SIM only_toplevel=false value="
                 let D3 = floor(code / 8 ) % 2
             end
             
-            alter V0 $&D0
-            alter V1 $&D1
-            alter V2 $&D2
-            alter V3 $&D3
+            alter V1 $&D0
+            alter V2 $&D1
+            alter V3 $&D2
+            alter V4 $&D3
 
             save all
             op
-            write ./data_fld/MCDACDATA\{$&run\}.csv v(D0) v(D1) v(D2) v(D3) i(v_i_out) v(dac_out)
+            write ./schemas/simulation/MCDACDATA\{$&run\}.csv v(D0) v(D1) v(D2) v(D3) i(v_i_out) v(dac_out)
             if code eq 0
                 set appendwrite
                 set wr_vecnames = FALSE

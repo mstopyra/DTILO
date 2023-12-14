@@ -81,14 +81,14 @@ V_i_amp net5 amp_i_out 0
                 let D3 = floor(code / 8 ) % 2
             end
 
-            alter V0 $&D0
-            alter V1 $&D1
-            alter V2 $&D2
-            alter V3 $&D3
+            alter V1 $&D0
+            alter V2 $&D1
+            alter V3 $&D2
+            alter V4 $&D3
 
             save all
             op
-            write ./data_fld/MCDACDATA{$&run}.csv v(D0) v(D1) v(D2) v(D3) i(v_i_out) v(dac_out)
+            write ./schemas/simulation/MCDACDATA{$&run}.csv v(D0) v(D1) v(D2) v(D3) i(v_i_out) v(dac_out)
             if code eq 0
                 set appendwrite
                 set wr_vecnames = FALSE
@@ -447,24 +447,24 @@ XM6 out in GND GND sky130_fd_pr__nfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * 
 .subckt PMOS_gain_mirror out in
 *.iopin in
 *.iopin out
-XM1 in in VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM1 in in VDD VDD sky130_fd_pr__pfet_01v8 L=.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM2 out in VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 out in VDD VDD sky130_fd_pr__pfet_01v8 L=.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult={M_amp} m={M_amp}
-XM3 out in VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 out in VDD VDD sky130_fd_pr__pfet_01v8 L=.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult={M_amp} m={M_amp}
-XM4 out in VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 out in VDD VDD sky130_fd_pr__pfet_01v8 L=.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult={M_amp} m={M_amp}
-XM5 out in VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 out in VDD VDD sky130_fd_pr__pfet_01v8 L=.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult={M_amp} m={M_amp}
-XM6 out in VDD VDD sky130_fd_pr__pfet_01v8 L={L} W={W} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 out in VDD VDD sky130_fd_pr__pfet_01v8 L=.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult={M_amp} m={M_amp}
++ sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
 
@@ -493,7 +493,7 @@ XM5 Q net2 GND GND sky130_fd_pr__nfet_01v8 L={invL} W={invW}*6 nf=1 ad='int((nf+
 XM6 Q net2 VDD VDD sky130_fd_pr__pfet_01v8 L={invL} W={invW}*6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-C1 net1 GND .1f m=1
+C1 net1 GND .114f m=1
 .ends
 
 .GLOBAL GND
