@@ -63,7 +63,7 @@ foreach .temp 0 25 80
 end
 .endc
 "}
-C {madvlsi/tt_models.sym} 270 -610 0 0 {
+C {madvlsi/tt_models.sym} 380 -390 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1

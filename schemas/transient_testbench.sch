@@ -101,7 +101,7 @@ value=".option wnflag=1
 }
 C {devices/code.sym} -710 -270 0 0 {name=SPICE only_toplevel=false value="
 
-.tran 0.01n 100n
+.tran 0.01n 10n
 .save i(V_i_out) i(V_i_amp) i(V_i_ro) v(RO_out) v(V_out) v(f/2) v(f/4) v(f/3) v(q1) v(q2) v(q3) v(q4)
 
 .control
