@@ -172,11 +172,11 @@ C {devices/lab_pin.sym} -1000 -400 0 0 {name=p7 lab=RO_out}
 C {devices/lab_pin.sym} -1230 -240 2 0 {name=p9 lab=RO_out}
 C {madvlsi/vdd.sym} -1750 -360 0 0 {name=l7 lab=VDD}
 C {madvlsi/pmos3.sym} -1800 -330 2 0 {name=M1
-L=.15
-W=2
+L=\{L\}
+W=\{W\}
 body=VDD
 nf=1
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -187,8 +187,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -1710 -330 0 0 {name=M2
-L=.15
-W=1
+L=\{L\}
+W=\{W\}
 body=VDD
 nf=1
 mult=1
@@ -202,8 +202,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -1800 -210 0 0 {name=M3
-L=.15
-W=1
+L=\{L\}
+W=\{W\}
 body=GND
 nf=1
 mult=1
@@ -217,8 +217,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -1880 -210 2 0 {name=M4
-L=.15
-W=1
+L=\{L\}
+W=\{W\}
 body=GND
 nf=1
 mult=1
