@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1702505303
+timestamp 1702604723
 << nwell >>
 rect -250 715 455 1775
 << nmos >>
@@ -266,6 +266,7 @@ rect 140 -350 150 620
 rect 110 -360 150 -350
 rect 175 625 195 650
 rect 350 630 370 705
+rect 430 660 455 705
 rect 175 620 215 625
 rect 175 -350 185 620
 rect 205 -350 215 620
@@ -316,6 +317,6 @@ port 3 nsew
 flabel metal1 -255 1225 -255 1225 0 FreeSans 400 0 0 0 VDD
 port 4 nsew
 flabel metal1 -155 -100 -55 0 0 FreeSans 360 0 0 0 C_L
-flabel metal1 -255 340 -255 340 0 FreeSans 400 0 0 0 VDD
+flabel metal1 -255 340 -255 340 0 FreeSans 400 0 0 0 GND
 port 5 nsew
 << end >>

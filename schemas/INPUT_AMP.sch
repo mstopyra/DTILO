@@ -1,21 +1,21 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
 V {}
 S {}
 E {}
-N 120 -20 120 10 {
+N 90 30 90 60 {
 lab=#net1}
-N 100 -20 100 0 {
+N 70 40 70 60 {
 lab=i_in}
-N 70 -0 100 0 {
+N 40 40 70 40 {
 lab=i_in}
-N 140 0 140 10 {
+N 110 30 110 40 {
 lab=i_out}
-N 140 0 180 0 {
+N 110 40 150 40 {
 lab=i_out}
-C {/home/lxbtlr/DTILO/schemas/gain_mirror.sym} 120 20 0 0 {name=x1}
-C {/home/lxbtlr/DTILO/schemas/PMOS_gain_mirror.sym} 80 50 0 0 {name=x2}
-C {devices/iopin.sym} 180 0 0 0 {name=p1 lab=i_out}
-C {devices/iopin.sym} 70 0 2 0 {name=p2 lab=i_in}
+C {/home/mstopyra/Documents/DTILO/schemas/gain_mirror.sym} 90 20 2 1 {name=x1}
+C {/home/mstopyra/Documents/DTILO/schemas/PMOS_gain_mirror.sym} 50 -10 2 1 {name=x2}
+C {devices/iopin.sym} 150 40 2 1 {name=p1 lab=i_out}
+C {devices/iopin.sym} 40 40 0 1 {name=p2 lab=i_in}

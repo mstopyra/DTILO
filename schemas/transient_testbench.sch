@@ -1,4 +1,4 @@
-v {xschem version=3.4.3 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -141,8 +141,8 @@ C {devices/lab_pin.sym} -1570 -220 0 0 {name=p41 sig_type=std_logic lab=d2}
 C {devices/lab_pin.sym} -1570 -340 0 0 {name=p42 sig_type=std_logic lab=d1
 }
 C {devices/lab_pin.sym} -1570 -460 0 0 {name=p43 sig_type=std_logic lab=d0}
-C {/home/lxbtlr/DTILO/schemas/INPUT_AMP.sym} -1920 -90 0 0 {name=x1}
-C {/home/lxbtlr/DTILO/schemas/INPUT_AMP.sym} -1790 -90 0 0 {name=x2}
+C {/home/mstopyra/Documents/DTILO/schemas/INPUT_AMP.sym} -1920 -90 0 0 {name=x1}
+C {/home/mstopyra/Documents/DTILO/schemas/INPUT_AMP.sym} -1790 -90 0 0 {name=x2}
 C {devices/lab_pin.sym} -1720 -450 0 1 {name=p2 lab=dac_out}
 C {devices/lab_pin.sym} -1960 -90 2 1 {name=p3 lab=dac_out}
 C {madvlsi/gnd.sym} -1570 -400 0 0 {name=l1 lab=GND}
