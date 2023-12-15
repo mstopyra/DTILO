@@ -1,0 +1,25 @@
+magic
+tech sky130A
+timestamp 1702607100
+<< locali >>
+rect -60 1235 1320 1255
+rect -60 780 -40 1235
+rect -20 1195 1280 1215
+rect -20 1030 0 1195
+rect 1260 1030 1280 1195
+rect 1300 780 1320 1235
+rect -70 760 0 780
+rect 1260 760 1320 780
+use DFF  DFF_0
+timestamp 1702606600
+transform 1 0 145 0 1 -295
+box 695 295 1115 1500
+use DFF  DFF_1
+timestamp 1702606600
+transform 1 0 -695 0 1 -295
+box 695 295 1115 1500
+use DFF  DFF_2
+timestamp 1702606600
+transform 1 0 -275 0 1 -295
+box 695 295 1115 1500
+<< end >>

@@ -1,0 +1,41 @@
+magic
+tech sky130A
+timestamp 1702605233
+<< nwell >>
+rect 670 1745 830 2170
+rect 1410 1745 3610 2170
+rect 625 1490 3610 1745
+rect 670 1110 830 1490
+rect 1410 1100 3610 1490
+<< locali >>
+rect 185 2215 2920 2235
+rect 185 2175 205 2215
+rect 725 2175 745 2215
+rect 1450 2175 1470 2215
+rect 2175 2175 2195 2215
+rect 2900 2175 2920 2215
+rect 910 2170 930 2175
+<< metal1 >>
+rect 625 1490 3590 1745
+rect 50 620 3535 870
+use inv_new  inv_new_0
+timestamp 1702604723
+transform 1 0 3160 0 1 395
+box -270 -400 455 1795
+use inv_new  inv_new_1
+timestamp 1702604723
+transform 1 0 260 0 1 395
+box -270 -400 455 1795
+use inv_new  inv_new_2
+timestamp 1702604723
+transform 1 0 985 0 1 395
+box -270 -400 455 1795
+use inv_new  inv_new_3
+timestamp 1702604723
+transform 1 0 1710 0 1 395
+box -270 -400 455 1795
+use inv_new  inv_new_4
+timestamp 1702604723
+transform 1 0 2435 0 1 395
+box -270 -400 455 1795
+<< end >>
