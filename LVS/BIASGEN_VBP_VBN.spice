@@ -1,0 +1,41 @@
+* NGSPICE file created from BIASGEN_VBP_VBN.ext - technology: sky130A
+
+
+X0 VBN VBN GND GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X1 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=1.15k ps=840 w=32 l=4
+X2 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=1.15k ps=840 w=32 l=4
+X3 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=0 ps=0 w=32 l=4
+X4 VDD VBP VBN VDD sky130_fd_pr__pfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X5 GND GND a_20200_15200# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X6 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=0 ps=0 w=32 l=4
+X7 a_10400_7800# GND GND GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X8 a_9200_15600# VBP GND VDD sky130_fd_pr__pfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X9 GND VBN VBN GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X10 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=0 ps=0 w=32 l=4
+X11 GND a_1000_0# a_10400_7800# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X12 a_1000_0# GND GND GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X13 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X14 VDD VDD GND VDD sky130_fd_pr__pfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X15 VBP a_10400_7800# VDD VDD sky130_fd_pr__pfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X16 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X17 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X18 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X19 a_20200_15200# a_20200_15200# VDD VDD sky130_fd_pr__pfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X20 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X21 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X22 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X23 VBP VBN GND GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X24 GND GND a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X25 GND VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X26 GND VBN VBP GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X27 VBN VBP VDD VDD sky130_fd_pr__pfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X28 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X29 GND VBP a_23600_15600# VDD sky130_fd_pr__pfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X30 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=0 ps=0 w=32 l=4
+X31 VDD a_10400_7800# a_10400_7800# VDD sky130_fd_pr__pfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X32 VDD a_20200_15200# VBP VDD sky130_fd_pr__pfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X33 a_20200_15200# a_17000_0# GND GND sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X34 a_1000_0# a_1000_0# a_1000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=0 ps=0 w=32 l=4
+X35 a_17000_0# a_17000_0# a_17000_0# GND sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=0 ps=0 w=32 l=4
+.end
+

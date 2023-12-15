@@ -1,0 +1,66 @@
+** sch_path: /home/mstopyra/Documents/DTILO/schemas/4bit_DAC_LDS.sch
+**.subckt 4bit_DAC_LDS i_out_ld i_dump g_v D_3 D_2 D_1 D_0
+*.opin i_out_ld
+*.opin i_dump
+*.ipin g_v
+*.ipin D_3
+*.ipin D_2
+*.ipin D_1
+*.ipin D_0
+XM29 net1 g_v i_dump GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net1 GND GND GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 i_out_ld GND GND GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 i_dump GND GND GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 i_out_ld GND GND GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+x2 net1 g_v i_out_ld i_dump D_3 LDS_DAC_block
+x1 net1 g_v i_out_ld i_dump D_2 LDS_DAC_block
+x3 net1 g_v i_out_ld i_dump D_1 LDS_DAC_block
+x4 net1 g_v i_out_ld i_dump D_0 LDS_DAC_block
+**.ends
+
+* expanding   symbol:  /home/mstopyra/Documents/DTILO/schemas/LDS_DAC_block.sym # of pins=9
+** sym_path: /home/mstopyra/Documents/DTILO/schemas/LDS_DAC_block.sym
+** sch_path: /home/mstopyra/Documents/DTILO/schemas/LDS_DAC_block.sch
+.subckt LDS_DAC_block h_v g_v i_out i_dump D_in
+*.opin i_dump
+*.opin i_out
+*.opin g_v
+*.opin h_v
+*.ipin g_v
+*.ipin i_out
+*.ipin i_dump
+*.ipin h_v
+*.ipin D_in
+XM13 h_v g_v net1 GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM14 i_out D_in h_v GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM15 net1 g_v h_v GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM16 h_v net2 i_dump GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM19 net2 D_in GND GND sky130_fd_pr__nfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM20 net2 D_in VDD VDD sky130_fd_pr__pfet_01v8 L=4 W=32 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

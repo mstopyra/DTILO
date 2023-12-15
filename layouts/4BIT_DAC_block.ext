@@ -1,0 +1,335 @@
+timestamp 1702609360
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use DAC_block DAC_block_20 1 0 11600 0 1 21400
+use DAC_block DAC_block_16 1 0 7600 0 1 21400
+use DAC_block DAC_block_15 1 0 15600 0 1 21400
+use DAC_block DAC_block_14 1 0 3600 0 1 21400
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "I_OUT_LD" 14 29800 24600 29800 24600 m2
+port "I_OUT" 3 4000 24600 4000 24600 m2
+port "I_DUMP" 12 29800 30200 29800 30200 m2
+port "VN" 16 4600 16600 4600 16600 m1
+node "I_OUT_LD" 1416 15673.8 29800 24600 m2 0 0 0 0 0 0 0 0 3840000 14000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3680000 13600 640000 4800 5440000 15200 0 0 0 0 0 0 0 0
+node "I_OUT" 1409 7641.97 4000 24600 m2 0 0 0 0 0 0 0 0 3840000 14000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600000 13200 800000 3600 2080000 6800 0 0 0 0 0 0 0 0
+node "I_DUMP" 1484 15011.8 29800 30200 m2 0 0 0 0 0 0 0 0 3840000 14000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4080000 17000 660000 5200 11280000 34600 0 0 0 0 0 0 0 0
+node "a_23600_29000#" 3108 11065.9 23600 29000 ndif 0 0 0 0 0 0 0 0 7680000 28000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7280000 26800 1840000 7800 3920000 11400 0 0 0 0 0 0 0 0
+node "a_6000_29000#" 1409 7590.9 6000 29000 ndif 0 0 0 0 0 0 0 0 3840000 14000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600000 13200 720000 3400 2077904 6808 0 0 0 0 0 0 0 0
+node "a_22400_35600#" 640 7039.36 22400 35600 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6480000 19600 0 0 320000 2400 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VN" 0 0 4600 16600 m1 0 0 0 0 0 0 0 0 15360000 56000 18813904 69888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24240000 67200 0 0 31637904 80408 58080000 100800 0 0 0 0 0 0 0 0 0 0
+cap "a_22400_35600#" "I_DUMP" 2268.38
+cap "I_OUT" "a_6000_29000#" 17.4189
+cap "a_23600_29000#" "I_DUMP" 2885.61
+cap "a_23600_29000#" "a_22400_35600#" 2694.02
+cap "I_OUT_LD" "I_DUMP" 191.048
+device msubckt sky130_fd_pr__nfet_01v8 24600 21600 24601 21601 l=800 w=6400 "VN" "VN" 1600 0 "VN" 6400 3840000,14000 "I_OUT_LD" 6400 3840000,14000
+device msubckt sky130_fd_pr__nfet_01v8 5200 21800 5201 21801 l=800 w=6400 "VN" "VN" 1600 0 "VN" 6400 3840000,14000 "I_OUT" 6400 3840000,14000
+device msubckt sky130_fd_pr__nfet_01v8 27200 29000 27201 29001 l=800 w=6400 "VN" "VN" 1600 0 "VN" 6400 3840000,14000 "a_23600_29000#" 6400 3840000,14000
+device msubckt sky130_fd_pr__nfet_01v8 24200 29000 24201 29001 l=800 w=6400 "VN" "a_22400_35600#" 1600 0 "a_23600_29000#" 6400 3840000,14000 "I_DUMP" 6400 3840000,14000
+device msubckt sky130_fd_pr__nfet_01v8 5200 29000 5201 29001 l=800 w=6400 "VN" "VN" 1600 0 "VN" 6400 3840000,14000 "a_6000_29000#" 6400 3840000,14000
+cap "DAC_block_14/inverter_0/A" "DAC_block_14/inverter_0/VP" 1.23585
+cap "DAC_block_14/inverter_0/Q" "DAC_block_14/inverter_0/VP" 93.7397
+cap "DAC_block_14/inverter_0/VP" "DAC_block_14/inverter_0/Q" 10.7143
+cap "DAC_block_16/inverter_0/VP" "DAC_block_16/inverter_0/A" 1.23585
+cap "DAC_block_16/inverter_0/VP" "DAC_block_16/inverter_0/Q" 93.7397
+cap "DAC_block_16/inverter_0/VP" "DAC_block_16/inverter_0/Q" 10.7143
+cap "DAC_block_15/inverter_0/VP" "DAC_block_20/inverter_0/Q" 93.7397
+cap "DAC_block_15/inverter_0/VP" "DAC_block_20/inverter_0/Q" 10.7143
+cap "DAC_block_14/inverter_0/VP" "DAC_block_14/inverter_0/Q" 109.363
+cap "DAC_block_14/inverter_0/VP" "DAC_block_14/inverter_0/Q" 12.5
+cap "DAC_block_16/inverter_0/Q" "DAC_block_16/inverter_0/VP" 109.363
+cap "DAC_block_16/inverter_0/VP" "DAC_block_16/inverter_0/Q" 12.5
+cap "DAC_block_15/inverter_0/VP" "DAC_block_20/inverter_0/Q" 109.363
+cap "DAC_block_15/inverter_0/VP" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_14/inverter_0/Q" "DAC_block_14/inverter_0/VP" 109.363
+cap "DAC_block_14/inverter_0/VP" "DAC_block_14/inverter_0/Q" 12.5
+cap "DAC_block_16/inverter_0/Q" "DAC_block_16/inverter_0/VP" 109.363
+cap "DAC_block_16/inverter_0/VP" "DAC_block_16/inverter_0/Q" 12.5
+cap "DAC_block_15/inverter_0/VP" "DAC_block_20/inverter_0/Q" 109.363
+cap "DAC_block_15/inverter_0/VP" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_16/VP" "DAC_block_14/inverter_0/Q" 109.363
+cap "DAC_block_16/VP" "DAC_block_14/inverter_0/Q" 12.5
+cap "DAC_block_20/VP" "DAC_block_16/inverter_0/Q" 109.363
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VP" 12.5
+cap "DAC_block_20/inverter_0/Q" "DAC_block_15/VP" 109.363
+cap "DAC_block_15/VP" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VP" 109.363
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VP" 12.5
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VP" 109.363
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VP" 12.5
+cap "DAC_block_15/VP" "DAC_block_20/inverter_0/Q" 109.363
+cap "DAC_block_15/VP" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_16/VP" "DAC_block_14/inverter_0/Q" 109.363
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VP" 12.5
+cap "DAC_block_20/VP" "DAC_block_16/inverter_0/Q" 109.363
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VP" 12.5
+cap "DAC_block_20/inverter_0/VP" "DAC_block_20/inverter_0/Q" 109.363
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VP" 12.5
+cap "DAC_block_16/VP" "DAC_block_14/inverter_0/Q" 109.363
+cap "DAC_block_16/VP" "DAC_block_14/inverter_0/Q" 12.5
+cap "DAC_block_20/VP" "DAC_block_16/inverter_0/Q" 109.363
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VP" 12.5
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VP" 109.363
+cap "DAC_block_20/inverter_0/VP" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_16/inverter_0/VP" "DAC_block_14/inverter_0/Q" 109.363
+cap "DAC_block_16/inverter_0/VP" "DAC_block_14/inverter_0/Q" 12.5
+cap "DAC_block_20/inverter_0/VP" "DAC_block_16/inverter_0/Q" 109.363
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/inverter_0/VP" 12.5
+cap "DAC_block_20/inverter_0/VP" "DAC_block_20/inverter_0/Q" 109.363
+cap "DAC_block_20/inverter_0/VP" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/inverter_0/VP" 109.363
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/inverter_0/VP" 12.5
+cap "DAC_block_20/inverter_0/VP" "DAC_block_16/inverter_0/Q" 109.363
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/inverter_0/VP" 12.5
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VP" 109.363
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VP" 12.5
+cap "DAC_block_14/inverter_0/A" "DAC_block_16/inverter_0/VP" 1.23585
+cap "DAC_block_16/inverter_0/VP" "DAC_block_14/inverter_0/Q" 42.3088
+cap "DAC_block_14/inverter_0/Q" "DAC_block_14/inverter_0/VN" 5.16657
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/inverter_0/VN" 1.78571
+cap "DAC_block_16/inverter_0/VP" "DAC_block_14/inverter_0/Q" 3.57143
+cap "DAC_block_16/inverter_0/Q" "DAC_block_16/inverter_0/VN" 5.16657
+cap "DAC_block_16/inverter_0/A" "DAC_block_20/inverter_0/VP" 1.23585
+cap "DAC_block_16/inverter_0/VN" "DAC_block_20/inverter_0/VP" 1.06581e-14
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/inverter_0/VP" 42.3088
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/inverter_0/VN" 1.78571
+cap "DAC_block_20/inverter_0/VP" "DAC_block_16/inverter_0/Q" 3.57143
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VN" 5.16657
+cap "DAC_block_20/inverter_0/VP" "DAC_block_20/inverter_0/Q" 42.3088
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VP" 3.57143
+cap "DAC_block_20/inverter_0/Q" "DAC_block_15/inverter_0/VN" 1.78571
+cap "DAC_block_15/inverter_0/VN" "DAC_block_15/inverter_0/Q" 3.55297
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 36.166
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 12.5
+cap "DAC_block_20/VN" "DAC_block_16/inverter_0/Q" 36.166
+cap "DAC_block_20/VN" "DAC_block_16/inverter_0/Q" 12.5
+cap "DAC_block_20/inverter_0/Q" "DAC_block_15/VN" 36.166
+cap "DAC_block_20/inverter_0/Q" "DAC_block_15/VN" 12.5
+cap "DAC_block_15/inverter_0/Q" "DAC_block_15/inverter_0/VN" 24.8708
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 36.166
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 12.5
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VN" 36.166
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VN" 12.5
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VN" 36.166
+cap "DAC_block_20/inverter_0/Q" "DAC_block_20/inverter_0/VN" 12.5
+cap "DAC_block_15/inverter_0/VN" "DAC_block_15/inverter_0/Q" 24.8708
+cap "DAC_block_16/VN" "DAC_block_14/inverter_0/Q" 36.166
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 12.5
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VN" 36.166
+cap "DAC_block_16/inverter_0/Q" "DAC_block_20/VN" 12.5
+cap "DAC_block_20/inverter_0/VN" "DAC_block_20/inverter_0/Q" 36.166
+cap "DAC_block_20/inverter_0/VN" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_15/inverter_0/VN" "DAC_block_15/inverter_0/Q" 24.8708
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 36.166
+cap "DAC_block_14/inverter_0/Q" "DAC_block_16/VN" 12.5
+cap "DAC_block_20/VN" "DAC_block_16/inverter_0/Q" 36.166
+cap "DAC_block_20/VN" "DAC_block_16/inverter_0/Q" 12.5
+cap "DAC_block_20/inverter_0/VN" "DAC_block_20/inverter_0/Q" 36.166
+cap "DAC_block_20/inverter_0/VN" "DAC_block_20/inverter_0/Q" 12.5
+cap "DAC_block_15/inverter_0/Q" "DAC_block_15/inverter_0/VN" 24.8708
+cap "DAC_block_14/a_6000_n400#" "DAC_block_16/VN" 28.2719
+cap "DAC_block_16/VN" "DAC_block_14/D_IN" 0.602946
+cap "DAC_block_14/a_6000_n400#" "DAC_block_16/VN" 19.9508
+cap "DAC_block_20/VN" "DAC_block_20/I_DUMP" -8.88178e-16
+cap "DAC_block_16/a_6000_n400#" "DAC_block_20/VN" 28.2719
+cap "DAC_block_16/D_IN" "DAC_block_20/VN" 0.602946
+cap "DAC_block_20/VN" "DAC_block_16/a_6000_n400#" 3.57143
+cap "DAC_block_20/inverter_0/VN" "DAC_block_20/a_6000_n400#" 44.6513
+cap "DAC_block_20/inverter_0/VN" "DAC_block_20/I_DUMP_OUT" -3.55271e-15
+cap "DAC_block_20/a_6000_n400#" "DAC_block_20/inverter_0/VN" 3.57143
+cap "DAC_block_15/inverter_0/VN" "DAC_block_15/a_6000_n400#" 10.6589
+cap "DAC_block_15/I_DUMP_OUT" "DAC_block_15/a_6000_n400#" 0.159421
+cap "VN" "DAC_block_14/VN" 0.200982
+cap "I_OUT" "DAC_block_14/VN" 8.87995
+cap "DAC_block_14/VN" "I_OUT" 4.06051
+cap "DAC_block_14/VN" "VN" 0.725929
+cap "DAC_block_14/a_6000_n400#" "DAC_block_16/VN" 4.33646
+cap "DAC_block_14/a_6000_n400#" "DAC_block_16/I_DUMP" 3.50682
+cap "DAC_block_16/VN" "DAC_block_16/I_DUMP" 37.033
+cap "DAC_block_16/VN" "DAC_block_14/a_6000_n400#" 3.07971
+cap "DAC_block_16/I_DUMP" "DAC_block_16/I_OUT_OUT" -1.42109e-14
+cap "DAC_block_16/I_DUMP" "DAC_block_16/D_IN" 0.933163
+cap "DAC_block_16/VN" "DAC_block_16/I_DUMP" 64.27
+cap "DAC_block_16/a_6000_n400#" "DAC_block_20/VN" 4.33646
+cap "DAC_block_20/I_DUMP" "DAC_block_20/VN" 95.3023
+cap "DAC_block_16/a_6000_n400#" "DAC_block_20/I_DUMP" 3.50682
+cap "DAC_block_20/I_DUMP" "DAC_block_20/I_OUT_OUT" -1.42109e-14
+cap "DAC_block_20/I_DUMP" "DAC_block_20/D_IN" 0.933163
+cap "DAC_block_20/a_6000_n400#" "DAC_block_20/I_DUMP_OUT" 3.50682
+cap "DAC_block_20/I_DUMP_OUT" "DAC_block_20/inverter_0/VN" 159.572
+cap "DAC_block_20/a_6000_n400#" "DAC_block_20/inverter_0/VN" 7.41617
+cap "DAC_block_15/I_OUT_OUT" "DAC_block_20/I_DUMP_OUT" -1.42109e-14
+cap "DAC_block_20/I_DUMP_OUT" "DAC_block_15/D_IN" 0.933163
+cap "DAC_block_15/a_4000_7600#" "DAC_block_15/I_DUMP_OUT" 2.66719
+cap "DAC_block_15/I_DUMP_OUT" "DAC_block_15/inverter_0/VN" 14.3397
+cap "DAC_block_15/a_6000_n400#" "DAC_block_15/I_DUMP_OUT" 133.812
+cap "DAC_block_15/I_DUMP_OUT" "DAC_block_15/inverter_0/VN" 2.70107
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/I_OUT" 62.1596
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/I_OUT" 28.4236
+cap "DAC_block_16/I_DUMP" "DAC_block_16/a_3400_200#" 78.2895
+cap "DAC_block_20/a_3400_200#" "DAC_block_20/I_DUMP" 203.943
+cap "DAC_block_20/I_DUMP_OUT" "DAC_block_15/a_3400_200#" 282.232
+cap "DAC_block_15/a_4000_7600#" "DAC_block_15/I_DUMP_OUT" 9.33515
+cap "VN" "DAC_block_15/I_DUMP_OUT" 64.1034
+cap "DAC_block_15/I_DUMP_OUT" "DAC_block_15/a_6000_n400#" 171.5
+cap "DAC_block_15/I_DUMP_OUT" "VN" 8.66196
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/I_OUT" 62.1596
+cap "DAC_block_14/I_OUT" "DAC_block_14/a_3400_200#" 28.4236
+cap "DAC_block_16/a_3400_200#" "DAC_block_14/I_DUMP" 78.2895
+cap "DAC_block_20/I_OUT" "DAC_block_16/I_DUMP" 102.331
+cap "DAC_block_20/a_3400_200#" "DAC_block_16/I_DUMP" 203.943
+cap "DAC_block_20/I_DUMP" "DAC_block_20/I_OUT_OUT" 102.331
+cap "DAC_block_15/a_3400_200#" "DAC_block_20/I_DUMP" 282.232
+cap "I_DUMP" "DAC_block_15/a_4000_7600#" 4.00078
+cap "I_DUMP" "VN" -19.3078
+cap "I_DUMP" "DAC_block_15/I_DUMP" 309.053
+cap "DAC_block_15/I_OUT_OUT" "DAC_block_15/I_DUMP" 119.753
+cap "DAC_block_15/a_6000_n400#" "I_DUMP" 73.5
+cap "DAC_block_15/I_DUMP" "VN" 83.4112
+cap "DAC_block_15/I_OUT_OUT" "I_DUMP" 1921.31
+cap "DAC_block_15/I_DUMP" "VN" 3.71227
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/I_OUT" 62.1596
+cap "DAC_block_14/I_OUT" "DAC_block_14/a_3400_200#" 28.4236
+cap "DAC_block_14/I_DUMP" "DAC_block_16/a_3400_200#" 78.2895
+cap "DAC_block_20/a_3400_200#" "DAC_block_16/I_DUMP" 203.943
+cap "DAC_block_20/I_DUMP" "DAC_block_15/a_3400_200#" 282.232
+cap "DAC_block_15/a_4000_7600#" "I_DUMP" 9.33515
+cap "DAC_block_15/I_DUMP" "VN" 83.4112
+cap "VN" "I_DUMP" -19.3078
+cap "I_DUMP" "DAC_block_15/a_6000_n400#" 171.5
+cap "DAC_block_15/I_DUMP" "I_DUMP" 721.125
+cap "VN" "DAC_block_15/I_DUMP" 8.66196
+cap "DAC_block_14/a_3400_200#" "I_OUT" 62.1596
+cap "I_OUT" "DAC_block_14/a_3400_200#" 28.4236
+cap "DAC_block_16/a_3400_200#" "DAC_block_14/I_DUMP" 78.2895
+cap "DAC_block_20/a_3400_200#" "DAC_block_16/I_DUMP" 203.943
+cap "DAC_block_20/I_DUMP" "DAC_block_15/a_3400_200#" 282.232
+cap "DAC_block_15/a_4000_7600#" "I_DUMP" 9.33515
+cap "DAC_block_15/I_DUMP" "I_DUMP" 721.125
+cap "I_DUMP" "VN" -19.3078
+cap "DAC_block_15/I_DUMP" "VN" 83.4112
+cap "I_DUMP" "DAC_block_15/a_6000_n400#" 171.5
+cap "VN" "DAC_block_15/I_DUMP" 8.66196
+cap "DAC_block_14/a_3400_200#" "I_OUT" 8.87995
+cap "VN" "DAC_block_14/a_3400_200#" 4.95702
+cap "I_OUT" "DAC_block_14/a_3400_200#" 8.0951
+cap "DAC_block_14/a_3400_200#" "a_6000_29000#" 4.03459
+cap "VN" "DAC_block_14/a_3400_200#" 7.05681
+cap "DAC_block_14/a_6000_n400#" "DAC_block_16/a_3400_200#" 0.418915
+cap "DAC_block_14/G_V_OUT" "DAC_block_16/a_3400_200#" 0.418915
+cap "DAC_block_14/G_V_OUT" "DAC_block_16/a_4000_7600#" 0.150992
+cap "DAC_block_14/H_V_OUT" "DAC_block_16/a_3400_200#" 14.452
+cap "DAC_block_16/a_3400_200#" "DAC_block_14/I_DUMP" 14.452
+cap "DAC_block_16/a_3400_200#" "DAC_block_14/a_6000_n400#" 4.33734
+cap "DAC_block_14/G_V_OUT" "DAC_block_16/a_3400_200#" 4.33734
+cap "DAC_block_16/G_V_OUT" "DAC_block_20/a_4000_7600#" 0.150992
+cap "DAC_block_16/G_V_OUT" "DAC_block_20/a_3400_200#" 0.418915
+cap "DAC_block_16/a_6000_n400#" "DAC_block_20/a_3400_200#" 0.418915
+cap "DAC_block_20/G_V_OUT" "DAC_block_15/a_4000_7600#" 0.150992
+cap "DAC_block_15/a_3400_200#" "DAC_block_20/I_DUMP" 14.452
+cap "DAC_block_20/G_V_OUT" "DAC_block_15/a_3400_200#" 4.75625
+cap "DAC_block_15/a_3400_200#" "DAC_block_20/H_V_OUT" 14.452
+cap "DAC_block_20/a_6000_n400#" "DAC_block_15/a_3400_200#" 4.75625
+cap "I_DUMP" "DAC_block_15/a_4000_7600#" 7.38172
+cap "DAC_block_15/a_6000_n400#" "VN" 0.200982
+cap "DAC_block_15/G_V_OUT" "VN" 4.75625
+cap "DAC_block_15/I_DUMP" "I_DUMP" 51.523
+cap "DAC_block_15/a_6000_n400#" "I_DUMP" 61.4349
+cap "DAC_block_15/G_V_OUT" "I_DUMP" 61.4349
+cap "VN" "DAC_block_15/H_V_OUT" 14.452
+cap "I_DUMP" "DAC_block_15/H_V_OUT" 51.523
+cap "VN" "DAC_block_15/I_DUMP" 2.89084
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/H_V" 62.1596
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/H_V" 28.4236
+cap "DAC_block_16/H_V" "DAC_block_16/a_3400_200#" 78.2895
+cap "DAC_block_20/H_V" "DAC_block_20/a_3400_200#" 203.943
+cap "DAC_block_15/a_3400_200#" "DAC_block_15/H_V" 282.232
+cap "I_DUMP" "DAC_block_15/H_V" 9.33515
+cap "DAC_block_15/G_V_OUT" "I_DUMP" 171.5
+cap "DAC_block_15/H_V_OUT" "I_DUMP" 868.462
+cap "DAC_block_15/H_V_OUT" "VN" 239.147
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/H_V" 62.1596
+cap "DAC_block_14/H_V" "DAC_block_14/a_3400_200#" 28.4236
+cap "DAC_block_16/a_3400_200#" "DAC_block_16/H_V" 78.2895
+cap "DAC_block_20/a_3400_200#" "DAC_block_20/H_V" 203.943
+cap "DAC_block_15/a_3400_200#" "DAC_block_20/H_V_OUT" 282.232
+cap "DAC_block_15/H_V_OUT" "I_DUMP" 1.4281
+cap "DAC_block_15/H_V_OUT" "VN" 239.147
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/H_V" 62.1596
+cap "DAC_block_14/a_3400_200#" "DAC_block_14/H_V" 28.4236
+cap "DAC_block_16/a_3400_200#" "DAC_block_16/H_V" 78.2895
+cap "DAC_block_20/H_V" "DAC_block_20/a_3400_200#" 203.943
+cap "DAC_block_20/H_V_OUT" "DAC_block_15/a_3400_200#" 282.232
+cap "DAC_block_15/H_V_OUT" "VN" 239.147
+cap "DAC_block_14/H_V" "DAC_block_14/a_3400_200#" 62.1596
+cap "DAC_block_14/H_V" "DAC_block_14/a_3400_200#" 28.4236
+cap "DAC_block_16/a_3400_200#" "DAC_block_16/H_V" 78.2895
+cap "DAC_block_20/a_3400_200#" "DAC_block_20/H_V" 203.943
+cap "DAC_block_15/a_3400_200#" "DAC_block_20/H_V_OUT" 282.232
+cap "VN" "DAC_block_15/H_V_OUT" 239.147
+cap "DAC_block_14/a_3400_200#" "a_6000_29000#" 17.7599
+cap "VN" "DAC_block_14/a_3400_200#" 0.725929
+cap "a_6000_29000#" "DAC_block_14/a_3400_200#" 12.1556
+cap "DAC_block_14/G_V_OUT" "DAC_block_16/a_3400_200#" 2.16867
+cap "DAC_block_14/H_V_OUT" "DAC_block_16/a_3400_200#" 36.8204
+cap "DAC_block_16/H_V_OUT" "DAC_block_20/a_3400_200#" 58.2693
+cap "DAC_block_20/H_V_OUT" "DAC_block_15/a_3400_200#" 95.0897
+cap "DAC_block_20/G_V_OUT" "DAC_block_15/a_3400_200#" 2.16867
+cap "DAC_block_15/H_V_OUT" "DAC_block_15/G_V_OUT" 9.27786
+cap "VN" "DAC_block_15/G_V_OUT" 25.9806
+cap "VN" "DAC_block_15/H_V_OUT" 82.7797
+merge "DAC_block_15/G_V_OUT" "a_22400_35600#" -1175.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -800 0 0 0 -3200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "a_22400_35600#" "DAC_block_14/G_V_OUT"
+merge "DAC_block_14/G_V_OUT" "DAC_block_20/G_V_OUT"
+merge "DAC_block_20/G_V_OUT" "DAC_block_16/G_V_OUT"
+merge "DAC_block_15/I_DUMP_OUT" "DAC_block_16/I_DUMP_OUT" -10688.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -320000 -3600 -180000 -5600 -5640800 -27603 0 0 0 0 0 0 0 0
+merge "DAC_block_16/I_DUMP_OUT" "DAC_block_20/I_DUMP_OUT"
+merge "DAC_block_20/I_DUMP_OUT" "DAC_block_14/I_DUMP_OUT"
+merge "DAC_block_14/I_DUMP_OUT" "DAC_block_15/I_DUMP"
+merge "DAC_block_15/I_DUMP" "I_DUMP"
+merge "I_DUMP" "DAC_block_14/I_DUMP"
+merge "DAC_block_14/I_DUMP" "DAC_block_20/I_DUMP"
+merge "DAC_block_20/I_DUMP" "DAC_block_16/I_DUMP"
+merge "DAC_block_15/inverter_0/VP" "DAC_block_15/VP" -15183.8 0 0 0 0 0 -72000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70400 0 0 0 0 0 0 0 0 0 0
+merge "DAC_block_15/VP" "DAC_block_15/w_3400_n21600#"
+merge "DAC_block_15/w_3400_n21600#" "DAC_block_16/m1_7000_n21400#"
+merge "DAC_block_16/m1_7000_n21400#" "DAC_block_16/w_7000_n21600#"
+merge "DAC_block_16/w_7000_n21600#" "DAC_block_14/m1_7000_n21400#"
+merge "DAC_block_14/m1_7000_n21400#" "DAC_block_20/inverter_0/VP"
+merge "DAC_block_20/inverter_0/VP" "DAC_block_14/inverter_0/VP"
+merge "DAC_block_14/inverter_0/VP" "DAC_block_20/VP"
+merge "DAC_block_20/VP" "DAC_block_20/w_3400_n21600#"
+merge "DAC_block_20/w_3400_n21600#" "DAC_block_16/inverter_0/VP"
+merge "DAC_block_16/inverter_0/VP" "DAC_block_16/VP"
+merge "DAC_block_16/VP" "DAC_block_16/w_3400_n21600#"
+merge "DAC_block_15/I_OUT_OUT" "I_OUT_LD" -2504.7 0 0 0 0 0 0 0 0 -1080000 -4200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -960000 -3800 0 -8000 0 0 0 0 0 0 0 0 0 0
+merge "I_OUT_LD" "DAC_block_15/I_OUT"
+merge "DAC_block_15/I_OUT" "DAC_block_20/I_OUT_OUT"
+merge "DAC_block_20/I_OUT_OUT" "DAC_block_16/I_OUT_OUT"
+merge "DAC_block_16/I_OUT_OUT" "DAC_block_14/I_OUT_OUT"
+merge "DAC_block_14/I_OUT_OUT" "DAC_block_20/I_OUT"
+merge "DAC_block_20/I_OUT" "DAC_block_14/I_OUT"
+merge "DAC_block_14/I_OUT" "DAC_block_16/I_OUT"
+merge "DAC_block_16/I_OUT" "I_OUT"
+merge "DAC_block_15/VN" "DAC_block_20/inverter_0/VN" -35274.7 0 0 0 0 0 0 0 0 -4320000 -15000 -7776000 -35280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8699800 -43604 0 0 -10360400 -36002 -7808600 -95403 0 0 0 0 0 0 0 0 0 0
+merge "DAC_block_20/inverter_0/VN" "DAC_block_15/inverter_0/VN"
+merge "DAC_block_15/inverter_0/VN" "DAC_block_16/m1_7000_n7800#"
+merge "DAC_block_16/m1_7000_n7800#" "DAC_block_16/inverter_0/VN"
+merge "DAC_block_16/inverter_0/VN" "DAC_block_20/VN"
+merge "DAC_block_20/VN" "DAC_block_14/m1_7000_n7800#"
+merge "DAC_block_14/m1_7000_n7800#" "DAC_block_14/inverter_0/VN"
+merge "DAC_block_14/inverter_0/VN" "DAC_block_14/VN"
+merge "DAC_block_14/VN" "DAC_block_16/VN"
+merge "DAC_block_16/VN" "DAC_block_15/a_3400_200#"
+merge "DAC_block_15/a_3400_200#" "DAC_block_20/a_3400_200#"
+merge "DAC_block_20/a_3400_200#" "DAC_block_16/a_3400_200#"
+merge "DAC_block_16/a_3400_200#" "DAC_block_14/a_3400_200#"
+merge "DAC_block_14/a_3400_200#" "VN"
+merge "DAC_block_14/H_V_OUT" "DAC_block_16/H_V" -649.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3200 0 0 0 0 0 0 0 0 0 0
+merge "DAC_block_15/H_V_OUT" "a_23600_29000#" -2105.19 0 0 0 0 0 0 0 0 -1200000 -6600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1080000 -6600 0 -1600 0 0 0 0 0 0 0 0 0 0
+merge "DAC_block_14/H_V" "a_6000_29000#" -990.999 0 0 0 0 0 0 0 0 -360000 -1800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -240000 -1400 0 -1600 0 0 0 0 0 0 0 0 0 0
+merge "DAC_block_15/H_V" "DAC_block_20/H_V_OUT" -1464.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 0 0 0 0 0 0 0 0 0 0
+merge "DAC_block_16/H_V_OUT" "DAC_block_20/H_V" -1464.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1600 0 0 0 0 0 0 0 0 0 0

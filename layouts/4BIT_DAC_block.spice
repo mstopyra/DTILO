@@ -1,0 +1,31 @@
+* NGSPICE file created from 4BIT_DAC_block.ext - technology: sky130A
+
+.subckt inverter VP VN A Q
+X0 Q A VN VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X1 Q A VP VP sky130_fd_pr__pfet_01v8 ad=192 pd=134 as=192 ps=134 w=64 l=4
+.ends
+
+.subckt DAC_block I_DUMP D_IN H_V I_OUT H_V_OUT G_V_OUT VN VP
+Xinverter_0 VP VN D_IN inverter_0/Q inverter
+X0 I_DUMP inverter_0/Q a_4000_7600# VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X1 H_V G_V_OUT a_4000_7600# VN sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+X2 H_V_OUT G_V_OUT H_V VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=48 ps=35 w=32 l=4
+X3 a_4000_7600# D_IN I_OUT VN sky130_fd_pr__nfet_01v8 ad=48 pd=35 as=96 ps=70 w=32 l=4
+.ends
+
+.subckt x4BIT_DAC_block I_DUMP I_OUT VN
+XDAC_block_20 I_DUMP DAC_block_20/D_IN DAC_block_20/H_V I_OUT DAC_block_15/H_V DAC_block_20/G_V_OUT
++ VN DAC_block_20/VP DAC_block
+XDAC_block_14 I_DUMP DAC_block_14/D_IN DAC_block_14/H_V I_OUT DAC_block_16/H_V DAC_block_20/G_V_OUT
++ VN DAC_block_20/VP DAC_block
+XDAC_block_15 I_DUMP DAC_block_15/D_IN DAC_block_15/H_V I_OUT DAC_block_15/H_V_OUT
++ DAC_block_20/G_V_OUT VN DAC_block_20/VP DAC_block
+XDAC_block_16 I_DUMP DAC_block_16/D_IN DAC_block_16/H_V I_OUT DAC_block_20/H_V DAC_block_20/G_V_OUT
++ VN DAC_block_20/VP DAC_block
+X0 I_OUT VN VN VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X1 DAC_block_14/H_V VN VN VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X2 DAC_block_15/H_V_OUT VN VN VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X3 I_DUMP DAC_block_20/G_V_OUT DAC_block_15/H_V_OUT VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+X4 I_OUT VN VN VN sky130_fd_pr__nfet_01v8 ad=96 pd=70 as=96 ps=70 w=32 l=4
+.ends
+
